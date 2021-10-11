@@ -5,52 +5,94 @@
   </ol>
 </nav>
 
-<div class="row d-flex mb-4">
-  <div class="col-md">
-    <h1 class="h2 px-2">Categories</h1>
+<div class="d-flex justify-content-between">
+
+  <div class="h2 ms-2 user-select-none">
+    Categories
   </div>
 
-  <div class="col-md d-flex justify-content-end">
-    <a routerLink="new" class="btn btn-success">
-      <span class="align-middle">+ New Category</span>
-    </a>
-  </div>
+    <div class="">
+      <button routerLink="new" class="btn btn-success align-middle">
+        + New Category
+      </button>
+    </div>
+
 </div>
 
 <table class="table table-hover">
   <thead>
-    <tr class="bg-primary text-light">
-      <th>Category</th>
-      <th>Actions</th>
+    <tr class="d-flex bg-primary text-light">
+      <th class="flex-fill text-center fw-normal">Category</th>
+      <th class="flex-fill text-center fw-normal">Actions</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
-        <strong>Leisure</strong><br/>
+    <tr class="d-flex">
+      <td class="flex-fill">
+        <strong>Leisure</strong><br />
         <small>Movies, park, beach</small>
       </td>
-      <td>
-        <a [routerLink]="[12, 'edit']" class="btn btn-outline-info btn-sm mx-2">Edit</a>
-        <button (click)="''" class="btn btn-outline-danger btn-sm">Delete</button>
+      <td class="flex-fill text-center">
+        <button
+          [routerLink]="[12, 'edit']"
+          class="btn btn-outline-info btn-sm mx-2"
+        >
+          Edit
+        </button>
+        <button (click)="('')" class="btn btn-outline-danger btn-sm">
+          Delete
+        </button>
       </td>
-    </tr><tr>
-      <td>
-        <strong>Leisure</strong><br/>
+    </tr>
+    <tr class="d-flex">
+      <td class="flex-fill">
+        <strong>Leisure</strong><br />
         <small>Movies, park, beach</small>
       </td>
-      <td>
-        <a [routerLink]="[12, 'edit']" class="btn btn-outline-info btn-sm mx-2">Edit</a>
-        <button (click)="''" class="btn btn-outline-danger btn-sm">Delete</button>
+      <td class="flex-fill text-center">
+        <button
+          [routerLink]="[12, 'edit']"
+          class="btn btn-outline-info btn-sm mx-2"
+        >
+          Edit
+        </button>
+        <button (click)="('')" class="btn btn-outline-danger btn-sm">
+          Delete
+        </button>
       </td>
-    </tr><tr>
-      <td>
-        <strong>Leisure</strong><br/>
+    </tr>
+    <tr class="d-flex">
+      <td class="flex-fill">
+        <strong>Leisure</strong><br />
         <small>Movies, park, beach</small>
       </td>
-      <td>
-        <a [routerLink]="[12, 'edit']" class="btn btn-outline-info btn-sm mx-2">Edit</a>
-        <button (click)="''" class="btn btn-outline-danger btn-sm">Delete</button>
+      <td class="flex-fill text-center">
+        <button
+          [routerLink]="[12, 'edit']"
+          class="btn btn-outline-info btn-sm mx-2"
+        >
+          Edit
+        </button>
+        <button (click)="('')" class="btn btn-outline-danger btn-sm">
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr class="d-flex">
+      <td class="flex-fill">
+        <strong>Leisure</strong><br />
+        <small>Movies, park, beach</small>
+      </td>
+      <td class="flex-fill text-center">
+        <button
+          [routerLink]="[12, 'edit']"
+          class="btn btn-outline-info btn-sm mx-2"
+        >
+          Edit
+        </button>
+        <button (click)="('')" class="btn btn-outline-danger btn-sm">
+          Delete
+        </button>
       </td>
     </tr>
   </tbody>
